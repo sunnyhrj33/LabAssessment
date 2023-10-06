@@ -5,11 +5,10 @@ public class LibraryItem {
     LibraryItemType itemType;
     boolean isBorrowed;
 
-    public LibraryItem(String title, String author, int year, boolean isBorrowed, LibraryItemType itemType) {
+    public LibraryItem(String title, String author, int year,LibraryItemType itemType) {
         this.title = title;
         this.author = author;
         this.year = year;
-        this.isBorrowed=isBorrowed;
         this.itemType = itemType;
 
     }
@@ -67,7 +66,7 @@ public class LibraryItem {
     }
     @Override
     public String toString(){
-        return String.format("%s,%s,%d,%s,%s,%s",title,author,year,isBorrowed,itemType);
+        return String.format("%s,%s,%d,%s,%s",title,author,year,isBorrowed,itemType);
     }
     }
 

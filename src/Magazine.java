@@ -2,13 +2,9 @@
 public class Magazine extends LibraryItem {
     private int issueNumber;
 
-    public Magazine(String title, String author, int year, boolean isBorrowed,LibraryItemType itemType, int issueNumber) {
-        super(title, author, year, isBorrowed, itemType);
+    public Magazine(String title, String author, int year, int issueNumber) {
+        super(title, author, year,LibraryItemType.Magazine);
         this.issueNumber = issueNumber;
-    }
-
-    public Magazine(String title, String author, int year, int i) {
-        super(title, author, year, i);
     }
 
     public int getIssueNumber() {
